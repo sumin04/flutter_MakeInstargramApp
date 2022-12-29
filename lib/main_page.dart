@@ -13,7 +13,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int _selectedIndex = 1;
+  int _selectedIndex = 3;
   List<BottomNavigationBarItem> bottomItems = [
     BottomNavigationBarItem(
       label: 'HomeScreen',
