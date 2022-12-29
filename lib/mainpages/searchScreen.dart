@@ -56,7 +56,7 @@ class _SearchGridScreen extends State<SearchGridScreen> {
         backgroundColor: Colors.white,
         ),
       body: Center(
-        child: Text('반갑다'),
+        child: Text('검색기능'),
       ),
     );
   }
