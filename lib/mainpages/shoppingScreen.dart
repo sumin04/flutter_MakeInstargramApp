@@ -12,6 +12,7 @@ class _ShoppingScreen extends State<ShoppingScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Text('Shop',
           style: TextStyle(fontFamily: 'NanumGothic', fontWeight: FontWeight.bold, fontSize: 25, color: Colors.black),
         ),
@@ -27,7 +28,6 @@ class _ShoppingScreen extends State<ShoppingScreen> {
             color: Colors.black,
           )
         ],
-        backgroundColor: Colors.white,
       ),
       body: Center(
         child: Text('콘칩 마시따 히히'),

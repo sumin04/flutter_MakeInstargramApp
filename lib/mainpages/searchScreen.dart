@@ -32,31 +32,35 @@ class _SearchGridScreen extends State<SearchGridScreen> {
         title: Container(
           height: 40,
           decoration: BoxDecoration(
-            // color: Colors.white10,
-            color: Colors.black12,
+            color: Color(0xffEFEFEF),
             borderRadius: BorderRadius.circular(12),
           ),
-          child: TextFormField(
-            keyboardType: TextInputType.number,
-            style: TextStyle(
-              fontSize: 18,
-            ),
-            controller: searchTextEditingController, // 검색창 controller
+          child: Container(
+            // padding: EdgeInsets.all(5),
+            child: TextFormField(
+              cursorColor: Colors.black,
+              cursorHeight: 23,
+              keyboardType: TextInputType.number,
+              style: TextStyle(
+              ),
+              controller: searchTextEditingController, // 검색창 controller
               decoration: InputDecoration(
-                hintText: '검색',
-                hintStyle: TextStyle(
-                  color: Colors.grey,
-                ),
-                border: InputBorder.none,
-                prefixIcon: Icon(Icons.search, color: Colors.black,),
-                suffixIcon: IconButton(icon: Icon(Icons.clear, color: Colors.black,), onPressed: emptyTheTextFormField)
+                  hintText: '검색',
+                  hintStyle: TextStyle(
+                    color: Colors.grey,
+                    // fontSize: 20,
+                  ),
+                  border: InputBorder.none,
+                  prefixIcon: Icon(Icons.search, color: Colors.black,),
+                  suffixIcon: IconButton(icon: Icon(Icons.clear, color: Colors.black,), onPressed: emptyTheTextFormField)
+              ),
             ),
-          ),
+          )
         ),
         backgroundColor: Colors.white,
         ),
       body: Center(
-        child: Text('검색기능 추가'),
+        child: Text('커서 기준 수정'),
       ),
     );
   }

@@ -13,7 +13,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  int _selectedIndex = 3;
+  int _selectedIndex = 0;
   List<BottomNavigationBarItem> bottomItems = [
     BottomNavigationBarItem(
       label: 'HomeScreen',
@@ -23,10 +23,6 @@ class _MainPageState extends State<MainPage> {
       label: 'SearchGridScreen',
       icon: Icon(Icons.search),
     ),
-    // BottomNavigationBarItem(
-    //   label: 'Mode',
-    //   icon: Icon(Icons.dark_mode_outlined),
-    // ),
     BottomNavigationBarItem(
       label: 'ShoppingScreen',
       icon: Icon(Icons.shopping_bag_outlined),
